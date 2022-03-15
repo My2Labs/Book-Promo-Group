@@ -1,0 +1,28 @@
+ul {
+    display:flex;
+    text-decoration: none;
+    background-color: rgb(84, 113, 81);
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+}
+
+h1{
+  display: flex;
+  text-decoration: none;
+  background-color: hsl(120, 20%, 70%);
+justify-content: center;
+font-family: 'Allerta Stencil', sans-serif;
+font-size: x-large;
+text-transform: uppercase;
+margin: 20px;
+}
+
+body {
+    background-color: hsl(120, 20%, 70%);
+}
+
+main {
+    display: block;
+    text-align: center;
+}
