@@ -9,6 +9,7 @@
 nav {
     display: grid;
     background-color: rgb(84, 113, 81);
+    padding-left: 40px;
 }
 
 nav a:link, nav a:visited {
@@ -18,7 +19,13 @@ nav a:link, nav a:visited {
     font-size: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
+}
 
+.thelinks {
+    display: flex;
+    flex-wrap: no wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .facts > ul {
@@ -59,7 +66,7 @@ h1{
     background-color: hsl(120, 20%, 70%);
     justify-content: center;
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: x-large;
+    font-size: 50px;
     text-transform: uppercase;
     margin: 20px;
 }
@@ -145,6 +152,7 @@ h3 {
     width: 60%;
     padding: 20px;
     font-size: 22px;
+    color: white;
     justify-content: center;
     background: linear-gradient(rgb(148, 168, 146), rgb(84, 113, 98), rgb(148, 158, 147))
 }
@@ -152,6 +160,7 @@ h3 {
 .lost {
     width: 60%;
     font-size: 22px;
+    color: white;
     padding: 20px;
     background: linear-gradient(rgb(148, 168, 146), rgb(84, 113, 98), rgb(148, 158, 147))
 }
