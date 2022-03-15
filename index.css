@@ -41,9 +41,10 @@ main {
 
 .facts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
+    padding:25px;
 }
 
 h2 {
@@ -53,7 +54,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.fact1 {
+.fact1 > li {
     grid-column: 1 / 1;
     grid-row: 2 / 2;
 }
@@ -61,6 +62,11 @@ h2 {
 .fact2 {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
+}
+
+.fact1 > ul {
+grid-column: 1 / 1;
+grid-row: 1 / 1;
 }
 
 .testimonials {
@@ -81,9 +87,12 @@ h3 {
 }
 
 .cub {
-    width: 45%;
+    width: 60%;
+    padding: 20px;
+    justify-content: center;
 }
 
 .lost {
-    width: 45%;
+    width: 60%;
+    padding: 20px;
 }
