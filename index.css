@@ -1,32 +1,80 @@
-ul {
-    display:flex;
+.toplinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+
+nav {
+    display: block;
+    background-color: rgb(84, 113, 81);
+    justify-content: center;
+}
+
+nav a:link, nav a:visited {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.facts > ul {
+    display:block;
     text-decoration: none;
     background-color: rgb(84, 113, 81);
-    justify-content: space-evenly;
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-h1{
-  display: flex;
-  text-decoration: none;
-  background-color: hsl(120, 20%, 70%);
-justify-content: center;
-font-family: 'Allerta Stencil', sans-serif;
-font-size: x-large;
-text-transform: uppercase;
-margin: 20px;
-}
-
-body {
-    background-color: hsl(120, 20%, 70%);
+    font-size: 26px;
+    margin-left: 0;
+    width: 100%;
+    background: linear-gradient(rgb(148, 168, 146), rgb(84, 113, 98), rgb(148, 158, 147))
 }
 
 main {
     display: block;
     text-align: center;
 }
+
+
+body {
+    background-color: hsl(120, 20%, 70%);
+}
+
+
+h1{
+    display: flex;
+    text-decoration: none;
+    background-color: hsl(120, 20%, 70%);
+    justify-content: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+#title {
+        animation: 4s anim-flipX ease infinite;
+      }
+      @keyframes anim-flipX {
+        0% {
+          opacity: 0;
+          transform: rotateX(90def);
+        }
+        50% {
+          opacity: 1;
+          transform: rotateX(720deg);
+        }
+        100% {
+          opacity: 1;
+          transform: rotateX(720deg);
+        }
+      }
+    }      
+
 
 .quote {
     display: flex;
@@ -55,6 +103,8 @@ main {
     font-family: 'Allerta Stencil', sans-serif;
     border: 4px solid rgb(84, 113, 81);
     width: 100%;
+    background-color: rgb(84, 113, 81);
+    font-size: 28px;
 }
 
 h2 {
@@ -64,7 +114,7 @@ h2 {
     text-transform: uppercase;
 }
 
-li {
+.facts > ul > li {
     padding: 10px;
     width: 100%;
 }
@@ -95,10 +145,15 @@ h3 {
 .cub {
     width: 60%;
     padding: 20px;
+    font-size: 22px;
     justify-content: center;
+    background: linear-gradient(rgb(148, 168, 146), rgb(84, 113, 98), rgb(148, 158, 147))
 }
 
 .lost {
     width: 60%;
+    font-size: 22px;
     padding: 20px;
+    background: linear-gradient(rgb(148, 168, 146), rgb(84, 113, 98), rgb(148, 158, 147))
 }
+
