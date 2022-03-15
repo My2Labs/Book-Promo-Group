@@ -1,14 +1,14 @@
 .toplinks {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 10px;
+    justify-content: space-around;
 }
 
 nav {
-    display: block;
+    display: grid;
     background-color: rgb(84, 113, 81);
-    justify-content: center;
 }
 
 nav a:link, nav a:visited {
@@ -44,6 +44,14 @@ body {
     background-color: hsl(120, 20%, 70%);
 }
 
+.quote {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-style: italic;
+    font-size: 22px;
+}
+
 
 h1{
     display: flex;
@@ -74,15 +82,6 @@ h1{
         }
       }
     }      
-
-
-.quote {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    font-style: italic;
-    font-size: 22px;
-}
 
 .bookcover {
     border: 13px solid white;
